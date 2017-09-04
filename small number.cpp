@@ -5,6 +5,8 @@ int main()
 {
   int n,k,i=0;
   cin>>n>>k;
+  if(n>0)
+  {
   int aux[100];
   while(n>0)
   {
@@ -15,6 +17,9 @@ int main()
   sort(aux,i);
   for(int z=0;z<(i-k);z++)
   cout<<aux[z];
+  }
+  else
+    cout<<0;
 }
 int sort(int arr[],int n)
 {
